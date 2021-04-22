@@ -1,2 +1,4 @@
-async function f() {}
+async function f() {
+  await Promise.resolve('').then(() => undefined);
+}
 f();

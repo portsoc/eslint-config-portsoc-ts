@@ -38,7 +38,6 @@ module.exports = {
           },
         }],
         'no-param-reassign': [0],
-        'no-restricted-syntax': [0],
         'prefer-destructuring': [0],
         'no-else-return': [0],
         'no-console': [0],
@@ -62,6 +61,10 @@ module.exports = {
         'no-underscore-dangle': [0],
         'no-mixed-operators': [0],
         'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+        '@typescript-eslint/type-annotation-spacing': ['error', {
+          before: false,
+          after: true,
+        }],
       },
     },
   ],

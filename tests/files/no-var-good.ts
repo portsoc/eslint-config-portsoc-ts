@@ -1,4 +1,4 @@
-let a = 3;
-const b = a++;
+let var1 = 3;
+const var2 = var1++;
 
-console.log(a + b);
+console.log(var1 + var2);
