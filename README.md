@@ -34,7 +34,7 @@ env:
   browser: true
 ```
 
-To achieve all the above using `package.json` add the following:
+To achieve all the above using `package.json`, add the following:
 
 ```json
   "eslintConfig": {
@@ -46,7 +46,7 @@ To achieve all the above using `package.json` add the following:
   }
 ```
 
-You will need a `tsconfig.json` file at the root of your project :
+You will need a `tsconfig.json` file at the root of your project:
 ```json
   {
     "compilerOptions": {
@@ -68,6 +68,13 @@ You will need a `tsconfig.json` file at the root of your project :
     ]
   }
 ``` 
+
+## Adding rules and tests
+
+New TS-specific rules need to be added to the `overrides` section of `index.js`.<br>
+Tests need to be added to the `/tests/files/` directory and should have a suffix depending on whether they should pass or fail linting:
+- `-good.ts` if the test should pass linting
+- `-bad.ts` if the test should fail linting
 
 Happy linting!
 
