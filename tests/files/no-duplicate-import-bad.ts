@@ -1,4 +1,4 @@
-import x from './package.json';
-import y from './package.json';
+import x from '../test';
+import y from '../test';
 
 console.log(x, y);

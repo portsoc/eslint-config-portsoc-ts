@@ -1,3 +1,4 @@
 import './empty-lines-good';
-import './no-unresolved-require-good.js';
-import '../../package.json';
+import './no-var-good.js';
+import '../test.js';
+

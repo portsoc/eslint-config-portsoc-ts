@@ -1,3 +1,3 @@
 import './empty-lines-good';
-import './no-unresolved-require-good';
-import '../../package.json';
+import './no-var-good';
+import '../test';
