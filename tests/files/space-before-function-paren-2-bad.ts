@@ -1,4 +1,4 @@
-console.log(function () {});
-console.log(function f () {});
-console.log(async () => {});
-console.log(() => {});
+console.log(function () { return ''; });
+console.log(function f () { return ''; });
+console.log(async () => { await Promise.resolve('').then(() => undefined); });
+console.log(() => { return ''; });

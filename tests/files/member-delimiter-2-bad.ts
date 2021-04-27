@@ -3,7 +3,7 @@ type Test1 = {
   b: number,
 };
 
-type Test2 = {a: string,};
+type Test2 = {a: string, };
 
 declare function test1(a: Test1): void;
 declare function test2(a: Test2): void;
