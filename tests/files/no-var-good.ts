@@ -1,3 +1,4 @@
+export default {}; // treat this file as a module
 let var1 = 3;
 const var2 = var1++;
 

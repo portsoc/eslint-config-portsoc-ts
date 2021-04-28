@@ -1,3 +1,4 @@
+export default {}; // treat this file as a module
 const a = 15;
 console.log(a);
 function f() {

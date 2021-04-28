@@ -1,3 +1,4 @@
+export default {}; // treat this file as a module
 console.log({
   a: 4,
   b: 5,

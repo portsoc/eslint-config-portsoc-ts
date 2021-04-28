@@ -1,3 +1,4 @@
+export default {}; // treat this file as a module
 console.log('single quotes OK');
 console.log("double quotes OK only if there's an apostrophe in them");
 console.log('backslash \' quoting allowed');

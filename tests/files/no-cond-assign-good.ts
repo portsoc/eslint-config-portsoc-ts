@@ -1,3 +1,4 @@
+export default {}; // treat this file as a module
 let a = 1;
 let x = false;
 do {
