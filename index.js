@@ -38,8 +38,6 @@ module.exports = {
         }],
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
-        'no-cond-assign': ['error', 'except-parens'],
-        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'import/extensions': [
           'error',
           'always',
@@ -50,7 +48,6 @@ module.exports = {
             jsx: 'never',
           },
         ],
-        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
         '@typescript-eslint/type-annotation-spacing': ['error', {
           before: false,
           after: true,
