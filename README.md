@@ -46,7 +46,7 @@ To achieve all the above using `package.json`, add the following:
   }
 ```
 
-You will need a `tsconfig.json` file at the root of your project:
+You will need a `tsconfig.json` file at the root of your project, such as this template:
 ```json
   {
     "compilerOptions": {
@@ -64,20 +64,29 @@ You will need a `tsconfig.json` file at the root of your project:
       "allowSyntheticDefaultImports": true
     },
     "include": [
-      "All the directories you want to be linted",
+      "src"
     ]
   }
 ``` 
 
-## Adding rules and tests
-
-New TS-specific rules need to be added to the `overrides` section of `index.js`.<br>
-Tests need to be added to the `/tests/files/` directory and should have a suffix depending on whether they should pass or fail linting:
-- `-good.ts` if the test should pass linting
-- `-bad.ts` if the test should fail linting
+The `include` section above should point to any directories with your TypeScript and JavaScript files.
 
 Happy linting!
 
 ## Contributing
 
 We are always delighted to receive pull requests, even for something as small as a typo.
+
+## Adding rules and tests
+
+If you'd like to add rules that are not specific to TypeScript but also apply to JavaScript, they should be submitted to [the `eslint-config-portsoc` package](https://github.com/portsoc/eslint-config-portsoc).
+
+New TS-specific rules need to be added to the `overrides` section of `index.js`.
+
+Tests need to be added to the `/tests/files/` directory and should have a suffix depending on whether they should pass or fail linting:
+- `-good.ts` if the test should pass linting
+- `-bad.ts` if the test should fail linting
+  - bad tests should always have only one instance of the error that's being checked; it's common to have one `-good.ts` file and multiple `-bad.ts` files for any rule.
+
+Run tests with `npm test`.
+
