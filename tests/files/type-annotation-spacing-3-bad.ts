@@ -5,7 +5,7 @@ a = 'Hello World2'; // so a has to be let
 console.log(a);
 
 
-export function test({ param }: { param: string }): number {
+export function test({ param } : { param: string }): number {
   return param.length;
 }
 

@@ -1,5 +1,4 @@
-export default {}; // treat this file as a module
-type Test1 = {
+export type Test1 = {
   a: string,
   b: number
 };

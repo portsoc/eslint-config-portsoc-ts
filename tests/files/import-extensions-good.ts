@@ -1,4 +1,3 @@
-import './empty-lines-good';
-import './no-var-good';
+import './no-shadow-good';
+import './indent-good';
 import '../test';
-export default {}; // treat this file as a module

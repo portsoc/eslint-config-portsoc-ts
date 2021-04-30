@@ -1,4 +1,3 @@
-import './empty-lines-good.ts';
-import './no-var-good';
+import './no-shadow-good.ts'; // bad
+import './indent-good';
 import '../test';
-export default {}; // treat this file as a module
