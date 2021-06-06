@@ -23,7 +23,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
-    "eslint-config-portsoc": "^0.8.1",
+    "eslint-config-portsoc": "^0.8.2",
     "eslint-config-semistandard": "^15.0.1",
     "eslint-config-standard": "^16.0.2",
     "eslint-import-resolver-typescript": "^2.4.0",
