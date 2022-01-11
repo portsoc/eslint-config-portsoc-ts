@@ -11,9 +11,10 @@
     "moduleResolution": "node",
     "jsx": "react",
     "allowJs": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false
   },
   "include": [
-    "./tests/files/"
+    "./tests/files/*-good.ts"
   ]
 }

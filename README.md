@@ -61,13 +61,14 @@ You will need a `tsconfig.json` file at the root of your project, such as this t
       "moduleResolution": "node",
       "jsx": "react",
       "allowJs": true,
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "allowUnreachableCode": false
     },
     "include": [
       "src"
     ]
   }
-``` 
+```
 
 The `include` section above should point to any directories with your TypeScript and JavaScript files.
 
@@ -89,4 +90,3 @@ Tests need to be added to the `/tests/files/` directory and should have a suffix
   - bad tests should always have only one instance of the error that's being checked; it's common to have one `-good.ts` file and multiple `-bad.ts` files for any rule.
 
 Run tests with `npm test`.
-
