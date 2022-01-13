@@ -2,3 +2,4 @@
 .github
 tests
 tsconfig.json
+dist-ts
