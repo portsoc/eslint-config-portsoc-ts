@@ -13,7 +13,11 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
-    "useUnknownInCatchVariables": true
+    "useUnknownInCatchVariables": true,
+    "baseUrl": "./",
+    "paths": {
+      "@test/*": ["tests/*"]
+    }
   },
   "include": [
     "./tests/files/*-good.ts"
