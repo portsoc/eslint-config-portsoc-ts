@@ -7,7 +7,7 @@
     "noImplicitAny": true,
     "alwaysStrict": true,
     "module": "es2020",
-    "target": "es2020",
+    "target": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
     "allowJs": true,
@@ -16,7 +16,9 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": "./",
     "paths": {
-      "@test/*": ["tests/*"]
+      "@test/*": [
+        "tests/*"
+      ]
     }
   },
   "include": [

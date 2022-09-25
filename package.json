@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "preversion": "[ `git branch --show-current` = 'main' ] # current branch must be main",
-    "test": "eslint -c index.js index.js tests/test.js && qunit tests/test.js && tsc"
+    "lint": "eslint -c index.js index.js tests/test.js",
+    "test": "npm run --silent lint && qunit tests/test.js && tsc"
   },
   "author": "PortSoC <softeng@port.ac.uk>",
   "contributors": [
@@ -18,23 +19,18 @@
   "repository": "github:portsoc/eslint-config-portsoc-ts",
   "bugs": "https://github.com/portsoc/eslint-config-portsoc-ts/issues",
   "peerDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^8.24.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
-    "eslint-config-portsoc": "^0.8.2",
-    "eslint-config-semistandard": "^15.0.1",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "typescript": "^4.6.2"
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint-config-portsoc": "^1.0.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "typescript": "^4.8.3"
   },
   "devDependencies": {
     "@types/topojson-specification": "^1.0.2",
-    "eslint": "^7.32.0",
+    "eslint": "^8.24.0",
     "eslint-plugin-json": "^3.1.0",
     "qunit": "^2.17.2"
   }
